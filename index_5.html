@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+    </style>
+<script>
+    // window.open("https://www.google.com","SubWindow",width=200,height=100
+    function f(){
+        var textw = document.getElementById("width").value;
+        var texth = document.getElementById("height").value;
+        var iframe=document.getElementById("iframe");
+        iframe.setAttribute("width",textw+"px");
+        iframe.setAttribute("height",texth+"px");
+
+
+    }
+//src="http://www.wikipedia.org/"
+
+
+</script>
+</head>
+<body>
+        My First SubWindow<br>
+    
+    <form>
+    	Width:<input type="text" id="width"    > <br>
+        Height:<input type="text" id="height"    > <br>
+    	<input type="button" id="btn" value="Go!" onclick="f()"> <br>
+
+    </form>
+    <iframe id="iframe" width="505" height='500' > </iframe><br>
+
+</body>
+</html>

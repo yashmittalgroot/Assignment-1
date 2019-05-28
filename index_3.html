@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+    </style>
+<script>
+    // window.open("https://www.google.com","SubWindow",width=200,height=100
+    function f(id){
+    	if(id=="r1"){
+    		var iframe=document.getElementById("iframe");
+    		iframe.setAttribute("src","https://en.wikipedia.org/wiki/Facebook");
+
+    	}
+    	else if(id=="r2"){
+    		var iframe=document.getElementById("iframe");
+    		iframe.setAttribute("src","https://en.wikipedia.org/wiki/Google");
+
+    	}
+    	else if(id=="r3") {
+    		var iframe=document.getElementById("iframe");
+    		iframe.setAttribute("src","https://en.wikipedia.org/wiki/YouTube");
+
+    	}
+    }
+//src="http://www.wikipedia.org/"
+
+
+</script>
+</head>
+<body>
+        My First SubWindow<br>
+    
+    <form>
+    	<input type="radio" id="r1" name="r" onclick="f('r1')">Facebook <br>
+    	<input type="radio" id="r2" name="r" onclick="f('r2')">Google <br>
+    	<input type="radio" id="r3" name="r" onclick="f('r3')">YouTube <br>	
+    </form>
+    <iframe id="iframe" src="http://www.wikipedia.org/" width="505" height='500' > </iframe><br>
+
+</body>
+</html>
